@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html & css base project</title>
+    <!--Internal Stylesheet css-->
+    <style>
+    body{
+        margin: 0; padding: 0; line-height: 1.5em;
+    }
+    #header{
+      background: black; font-family: Arial;
+      height: 100px; 
+    }
+    #contentwrapper {
+        float:left; width:100%;
+    }
+    #contentcolumn {
+        margin: 0 230px 0 230px; 
+    
+    }
+    #leftcolumn {
+        float: left; width: 230px; margin-left: -100%;
+        background: #24C8FF;
+    }
+    #rightcolumn{
+        float: left; width: 230px; margin-left: -230px;
+        background: #FFFB00;
+    }
+    .innertext{
+        margin: 20px; font-family: Arial;
+        color:#5E5E5E;
+    }
+    #footer {
+        clear: left; 
+        width: 100%; background-color: black; color:#FFF;
+        font-family: Arial; text-align:center;
+        padding: 8px;
+    }
+    ul {
+        list-style-type: none; margin: 0; padding: 0; 
+        background-color: #000;
+    }
+
+    li {
+        float: left; border-right:1px solid #bbb;
+    }
+
+    li:last-child{
+        border-right: none; 
+    }
+    li a{
+        display: block; color: white; text-align: center;
+        padding: 14px 16px; text-decoration: none;
+    } 
+    li a:hover:not(.active) {
+        background-color: #808080;
+    }
+    .active{
+        background-color: #0099ff;
+    }
+    @media (max-width:840px){/*drop right column down*/
+        #leftcolumn {margin-left: -100%;
+        }
+
+        #rightcolumn {
+            float: none; width: 100%;
+        margin-left: 0; clear:both;
+        }
+        #contentcolumn {
+             margin-right: 0; /*set margin to left column width*/
+        }
+    }
+    @media(max-width: 600px){/*drop left column down*/
+        #leftcolumn {
+            float: none;
+            width: 100%;
+            clear: both;
+            margin-left: 0;
+        }
+        #contentcolumn{
+            margin-left: 0;
+        }
+        }
+    
+    </style>
+</head>
+<body>
+  <div id="container">
+  <div id="header">
+  <ul style="display: inline;">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">About</a></li>
+  <li><a href="#contact">News</a></li>
+  <li><a href="#about">Contact</a></li>
+</ul>
+  </div>
+  <div id="contentwrapper">
+  <div id="contentcolumn">
+  <div class="innertext">
+      <b>Welcome!</b><br>A good paragraph is composed of a topic sentence (or key sentence),
+       relevant supporting sentences, and a closing (or transition) sentence.
+        This structure is key to keeping your paragraph focused on the main idea and creating a clear and concise image.
+      While creative writing does not necessarily follow the traditional paragraph structure,
+       it’s more about scene building and continuing a narrative. Efficient, well-written paragraphs are a staple of good
+        flash fiction and short fiction writing, as short stories need to stay more focused on a central idea. As long as your sentences
+         form cohesive ideas and connect to one another, you can write a good paragraph.
+         Provide support via the middle sentences. <br></div>
+         These sentences include follow-up information to your key sentence or previous paragraph. 
+         Whatever idea you aim to convey, these sentences are where you convince your reader to believe or envision
+          what you do, and give them everything they need to see your point of view. Make your last sentence a conclusion or transition.
+           Even if it’s not at the end of the piece, a conclusive sentence can refer to the last line of its own paragraph, 
+           which concludes a particular idea or train of thought before moving on to start a new line for the next paragraph.
+            This next paragraph can continue on the same idea, but the ending of each paragraph should briefly summarize the information 
+            that was provided before moving on.
+ 
+ </div>
+  </div>
+  </div>
+  <div id="leftcolumn">
+  <div class="innertext">
+      <b>Left Column:<em>230px</em></b><br> Know when to start a new paragraph. 
+      A paragraph break is necessary when starting a new topic, introducing a new speaker,
+       contrasting other POVs or ideas, or providing white space to give readers a pause from a longer paragraph.
+        For example, in a novel, you may start a new paragraph when bringing in a new character, 
+        or specify when a different character is speaking, which can help the reader separate action text from dialogue more readily. 
+        Paragraph breaks can control the pacing of your writing, and generate particular feelings or moods for your reader. 
+        While there is no set amount of sentences required per paragraph, in some instances, a single paragraph may consist of a single sentence,
+        but it is acceptable as long as it supports your central idea, and doesn’t overwhelm your audience with too much information.     
+        but the ending of each paragraph should briefly summarize the information.
+  </div>    
+  </div>
+  <div id="rightcolumn">
+  <div class="innertext">
+      <b>Right Column:<em>230px</em></b><br>Provide support via the middle sentences. 
+      These sentences include follow-up information to your key sentence or previous paragraph. 
+      Whatever idea you aim to convey, these sentences are where you convince your reader to believe or envision
+       what you do, and give them everything they need to see your point of view. Make your last sentence a conclusion or transition.
+        Even if it’s not at the end of the piece, a conclusive sentence can refer to the last line of its own paragraph, 
+        which concludes a particular idea or train of thought before moving on to start a new line for the next paragraph.
+         This next paragraph can continue on the same idea, but the ending of each paragraph should briefly summarize the information 
+         that was provided before moving on.but it is acceptable as long as it supports your central idea, and doesn’t overwhelm your audience with too much information.        
+  </div>    
+  </div>
+  <div id="footer">Footer</div>
+  </div>  
+</body>
+</html>
